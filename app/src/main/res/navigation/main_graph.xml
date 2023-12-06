@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.engin.cointrack.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.engin.cointrack.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.engin.cointrack.FavouriteFragment"
+        android:label="@string/favourites"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/coinDetailFragment"
+        android:name="com.engin.cointrack.CoinDetailFragment"
+        android:label="Coin Detail"
+        tools:layout="@layout/fragment_coin_detail" />
+</navigation>
