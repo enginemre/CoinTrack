@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginVertical="@dimen/spacing_large"
+    android:layout_marginHorizontal="@dimen/spacing_x_large"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/coin_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginVertical="@dimen/spacing_xx_large"
+            android:layout_marginStart="@dimen/spacing_xx_large"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/coin_symbol_text"
+            style="@style/TextAppearance.CoinTrack.BodyLarge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_x_large"
+            android:layout_marginTop="@dimen/spacing_small"
+            app:layout_constraintEnd_toStartOf="@+id/price_text"
+            app:layout_constraintStart_toEndOf="@+id/coin_image"
+            app:layout_constraintTop_toTopOf="@+id/coin_image"
+            tools:text="BTC"/>
+
+        <TextView
+            android:id="@+id/coin_name_text"
+            style="@style/TextAppearance.CoinTrack.BodySmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_x_small"
+            app:layout_constraintEnd_toEndOf="@+id/coin_symbol_text"
+            app:layout_constraintStart_toStartOf="@+id/coin_symbol_text"
+            app:layout_constraintTop_toBottomOf="@+id/coin_symbol_text"
+            tools:text="Bitcoin"/>
+
+        <TextView
+            android:id="@+id/price_text"
+            style="@style/TextAppearance.CoinTrack.TitleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_xx_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="$42.000" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
