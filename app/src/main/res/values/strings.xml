@@ -13,4 +13,6 @@
     <string name="login_failed">"Login failed"</string>
     <string name="home">Home</string>
     <string name="favourites">Favourites</string>
+    <string name="coin_image">Coin image</string>
+    <string name="favourite_icon">Favourite icon</string>
 </resources>
