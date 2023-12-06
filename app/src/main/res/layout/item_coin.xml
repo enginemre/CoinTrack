@@ -34,7 +34,7 @@
             app:layout_constraintEnd_toStartOf="@+id/price_text"
             app:layout_constraintStart_toEndOf="@+id/coin_image"
             app:layout_constraintTop_toTopOf="@+id/coin_image"
-            tools:text="BTC"/>
+            tools:text="BTC" />
 
         <TextView
             android:id="@+id/coin_name_text"
@@ -50,6 +50,7 @@
         <TextView
             android:id="@+id/price_text"
             style="@style/TextAppearance.CoinTrack.TitleLarge"
+            android:visibility="visible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/spacing_xx_large"
@@ -57,6 +58,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="$42.000" />
+
+        <ImageButton
+            android:id="@+id/coin_favourite_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_favourite"
+            android:layout_marginEnd="@dimen/spacing_xx_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
