@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">CoinTrack</string>
     <string name="home">Ana Sayfa</string>
     <string name="favourites">Favoriler</string>
+    <string name="coin_image">Coin image</string>
+    <string name="favourite_icon">Favourite icon</string>
+    <string name="retry">Retry</string>
+    <string name="error_occured">Hata Oluştu</string>
+    <string name="search_hint">Let\'s search coin</string>
+    <string name="hashing_algorithm">Hashing Algorithm :</string>
+    <string name="price_change_24h">Price Change 24h :</string>
+    <string name="description">Description</string>
+    <string name="priceText">$ %1$s</string>
+    <string name="login">Login</string>
+    <string name="no_result">No Result</string>
+    <string name="coin_detail">Coin Detail\n</string>
 </resources>
