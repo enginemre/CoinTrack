@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.CoinTrack.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="TextAppearance.CoinTrack.DisplayMedium" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="TextAppearance.CoinTrack.DisplaySmall" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="TextAppearance.CoinTrack.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="TextAppearance.CoinTrack.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="TextAppearance.CoinTrack.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="TextAppearance.CoinTrack.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="TextAppearance.CoinTrack.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="TextAppearance.CoinTrack.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="TextAppearance.CoinTrack.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="TextAppearance.CoinTrack.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="TextAppearance.CoinTrack.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="TextAppearance.CoinTrack.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="TextAppearance.CoinTrack.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="TextAppearance.CoinTrack.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">@font/montserrat_medium</item>
+    </style>
+</resources>

@@ -2,4 +2,6 @@
 <resources>
     <string name="home">Ana Sayfa</string>
     <string name="favourites">Favoriler</string>
+    <string name="coin_image">Coin image</string>
+    <string name="favourite_icon">Favourite icon</string>
 </resources>
