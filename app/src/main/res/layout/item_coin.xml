@@ -13,6 +13,7 @@
 
         <ImageView
             android:id="@+id/coin_image"
+            android:contentDescription="@string/coin_image"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_marginVertical="@dimen/spacing_xx_large"
@@ -31,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/spacing_x_large"
             android:layout_marginTop="@dimen/spacing_small"
-            app:layout_constraintEnd_toStartOf="@+id/price_text"
+            app:layout_constraintEnd_toStartOf="@+id/arrow_right"
             app:layout_constraintStart_toEndOf="@+id/coin_image"
             app:layout_constraintTop_toTopOf="@+id/coin_image"
             tools:text="BTC" />
@@ -47,25 +48,26 @@
             app:layout_constraintTop_toBottomOf="@+id/coin_symbol_text"
             tools:text="Bitcoin"/>
 
-        <TextView
-            android:id="@+id/price_text"
-            style="@style/TextAppearance.CoinTrack.TitleLarge"
-            android:visibility="visible"
+        <ImageView
+            android:id="@+id/arrow_right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/spacing_xx_large"
+            android:visibility="visible"
+            android:src="@drawable/ic_arrow_right"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="$42.000" />
+            app:layout_constraintVertical_bias="0.507"/>
 
         <ImageButton
             android:id="@+id/coin_favourite_image"
+            android:contentDescription="@string/favourite_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:visibility="gone"
             android:background="@android:color/transparent"
-            android:src="@drawable/ic_favourite"
+            android:src="@drawable/drawable_selector_favourite"
             android:layout_marginEnd="@dimen/spacing_xx_large"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
