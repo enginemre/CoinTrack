@@ -12,7 +12,9 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.engin.cointrack.MainGraphDirections
 import com.engin.cointrack.R
 import com.engin.cointrack.core.ui.SharedViewModel
 import com.engin.cointrack.core.util.Destinations
@@ -37,7 +39,8 @@ class HomeFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel.getCoins()
+        if (savedInstanceState == null)
+            viewModel.getCoins()
     }
 
 
@@ -51,8 +54,14 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        checkStatus()
         bindUI()
         observeUIAction()
+    }
+
+    private fun checkStatus() {
+        if (!sharedViewModel.isUserLoggedIn())
+            findNavController().navigate(MainGraphDirections.actionGlobalLoginFragment())
     }
 
     private fun observeUIAction() {

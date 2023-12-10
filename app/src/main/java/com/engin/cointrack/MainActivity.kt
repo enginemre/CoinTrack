@@ -45,7 +45,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initializeNavigation()
-        arrangeLastPosition(savedInstanceState)
         observeUIActions()
     }
 
@@ -97,7 +96,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(savedInstanceState: Bundle) {
         super.onSaveInstanceState(savedInstanceState)
-        savedInstanceState.putBundle("nav_state", navController.saveState())
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -121,17 +119,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun setToolbarTitle(title: String) {
         supportActionBar?.title = title
-    }
-
-    private fun arrangeLastPosition(savedInstanceState: Bundle?) {
-        if (savedInstanceState?.getBundle("nav_state") != null) {
-            navController.restoreState(savedInstanceState.getBundle("nav_state"))
-        } else {
-            if (viewModel.isUserLoggedIn())
-                navController.graph.setStartDestination(R.id.homeFragment)
-            else
-                navController.graph.setStartDestination(R.id.loginFragment)
-        }
     }
 
     private fun showBottomBar() {
