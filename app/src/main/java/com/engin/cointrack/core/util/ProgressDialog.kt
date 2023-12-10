@@ -18,11 +18,11 @@ object ProgressDialog {
             dialog = Dialog(context)
             dialog?.requestWindowFeature(Window.FEATURE_NO_TITLE)
             dialog?.setContentView(ProgressBar(context))
-           /* dialog?.window?.setLayout(
+            dialog?.window?.setLayout(
                 ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT
             )
-            dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))*/
+            dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             dialog?.setCancelable(false)
             dialog?.show()
         }catch (e : Exception){ }

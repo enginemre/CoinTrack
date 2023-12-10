@@ -3,26 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@+id/home">
 
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.engin.cointrack.feature.home.ui.HomeFragment"
-        android:label="@string/home"
-        tools:layout="@layout/fragment_home" />
-    <fragment
-        android:id="@+id/favouriteFragment"
-        android:name="com.engin.cointrack.feature.favourite.ui.FavouriteFragment"
-        android:label="@string/favourites"
-        tools:layout="@layout/fragment_favourite" >
-        <action
-            android:id="@+id/action_favouriteFragment_to_coinDetailFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popExitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:destination="@id/coinDetailFragment" />
-    </fragment>
+    <include app:graph="@navigation/home_graph" />
+    <include app:graph="@navigation/favourite_graph" />
+
     <fragment
         android:id="@+id/coinDetailFragment"
         android:name="com.engin.cointrack.feature.coin_detail.ui.CoinDetailFragment"
@@ -35,6 +20,28 @@
             android:name="name"
             app:argType="string" />
     </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.engin.cointrack.feature.login.LoginFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@+id/home"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_loginFragment"
+        app:destination="@id/loginFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/main_graph" />
     <action
         android:id="@+id/action_global_coinDetailFragment"
         app:enterAnim="@anim/slide_in_right"
@@ -44,24 +51,5 @@
         app:destination="@id/coinDetailFragment"
         app:popUpTo="@id/coinDetailFragment"
         app:popUpToInclusive="false" />
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.engin.cointrack.feature.login.LoginFragment"
-        android:label="@string/login"
-        tools:layout="@layout/fragment_login" >
-        <action
-            android:id="@+id/action_loginFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popExitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popUpTo="@id/loginFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
-    <action
-        android:id="@+id/action_global_loginFragment"
-        app:destination="@id/loginFragment"
-        app:launchSingleTop="true"
-        app:popUpTo="@id/main_graph" />
+
 </navigation>
