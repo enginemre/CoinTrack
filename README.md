@@ -1,21 +1,19 @@
----
-
 # Coin Track
 
-Coin Track, kullanıcılara coingecko.com sitesinden alınan API ile coin listelerini görüntüleyebilecekleri ve bu coinlerin detaylarını, son fiyatlarını, açıklamalarını ve detaylarını görebilecekleri bir platform sunar. Ayrıca kullanıcılar favori coinlerini işaretleyebilir ve daha kolay bir şekilde takip edebilir. Tüm coinler arasında arama yapabilirler.
+Coin Track allows users to view a list of coins obtained from coingecko.com's API, and enables them to see details, latest prices, descriptions, and more about these coins. Additionally, users can mark their favorite coins for easier tracking and perform searches among all available coins.
 
-## Özellikler
+## Features
 
-- Coin Listesi: Coingecko.com API'si kullanılarak coin listesi görüntüleme.
-- Coin Detayları: Coin detayları, fiyatları, açıklamaları ve detayları görüntüleme.
-- Favori Ekleme: Kullanıcıların favori coinlerini işaretleyip takip etme özelliği.
-- Arama: Tüm coinler arasında arama yapabilme.
+- Coin List: View a list of coins using the Coingecko.com API.
+- Coin Details: View details, prices, descriptions, and specifics about coins.
+- Favorites: Mark coins as favorites for easy tracking.
+- Search: Search through all available coins.
 
-## Mimarî ve Teknolojiler
+## Architecture and Technologies
 
-Projede S.O.L.I.D prensipleri baz alınarak, feature ve katman bazlı bir mimari yapı izlenmiştir. Bu doğrultuda Data-Domain-UI şeklinde her bir özellik kendi içerisinde ayrılmıştır. MVVM desenine dayalı bir mimari tasarım kullanılmıştır.
+Following S.O.L.I.D principles, the project has a feature and layer-based architecture, with each feature segregated into Data-Domain-UI layers. The architectural design is based on the MVVM pattern.
 
-### Kullanılan Teknolojiler
+### Technologies Used
 
 - Version Catalog
 - Navigation Component
@@ -30,17 +28,19 @@ Projede S.O.L.I.D prensipleri baz alınarak, feature ve katman bazlı bir mimari
 - Firestore
 - Firebase Auth
 
-## Test Kullanıcı Bilgileri
+## Test User Information
 
-- **E-posta:** test@gmail.com
-- **Şifre:** test123
+- **Email:** test@gmail.com
+- **Password:** test123
 
-## Kurulum ve Kullanım
+## Installation and Usage
 
-Projeyi çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
+To run the project, follow these steps:
 
-1. Proje dosyalarını klonlayın ya da indirin.
-2. Android Studio'da projeyi açın.
-3. Gerekli bağımlılıkları yükleyin ve yapılandırmaları yapın.
-4. Firebase hesabı oluşturun ve gerekli ayarları projeye entegre edin.
-5. Test kullanıcı bilgileriyle giriş yaparak uygulamayı test edin.
+1. Clone or download the project files.
+2. Open the project in Android Studio.
+3. Install required dependencies and configure settings.
+4. Create a Firebase account and integrate necessary configurations into the project.
+5. Test the application by logging in with the provided test user information.
+
+Note: AGP version should be 8.2.0 and the minimum Android Studio Hedegog should be installed.
